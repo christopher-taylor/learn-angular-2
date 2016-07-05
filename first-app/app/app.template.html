@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+<!--<courses></courses>
+<authors></authors>-->
+
+<!--The below show two ways of handling event binding-->
+<!--<div (click)="onDivClick()">
+    <button class="btn" (click)="onClick($event)">TOGGLE ACTIVE</button>
+    <button class="btn" on-click="onClick($event)">I also toggle active</button>
+</div>-->
+
+<!--The below show two ways of handling property binding-->
+<!--<button class="btn btn-primary" [class.active]="isActive">I am a Button</button>
+<button class="btn" [style.backgroundColor]="isActive? 'blue' : 'gray'">SECOND BUTTON</button>-->
+
+<!--Below are three different syntaxes for implementing two way binding.
+Notice the top method also has a support function
+I prefer the middle syntax-->
+<!--<br /><br />These inputs set the title in different ways<br />
+<input type="text" [value]="title" (input)="onInput($event)" />
+<input type="text" [(ngModel)]="title">
+<input type="text" bindon-ngModel="title">
+<button (click)="title = defaultTitle">Reset Title</button><br />
+<i class="glyphicon glyphicon-star"></i>
+<favorite (favorite-toggled)=onFavoriteChange($event) [is-favorite]="post.isFavorited"></favorite>
+<like (like-toggled)="onFavoriteChange($event)" [is-liked]="post.liked">-->
+<span *ngFor="#tweet of tweets">
+  <twitter 
+    [profile-picture]="tweet.profilePic"
+    [title]="tweet.title"
+    [username]="tweet.username"
+    [message]="tweet.message"
+    [starting-likes]="tweet.startingLikes"></twitter>
+</span>
+  

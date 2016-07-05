@@ -1,0 +1,7 @@
+<i 
+    class="glyphicon glyphicon-heart" 
+    [class.not-liked]="!isLiked"
+    [class.liked]="isLiked"
+    (click)="onClick($event)">
+</i>
+<span>{{likes}}</span>

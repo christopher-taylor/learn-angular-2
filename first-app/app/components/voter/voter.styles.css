@@ -1,0 +1,15 @@
+.voter{
+    text-align: center;
+    font-size: 20px;
+}
+.upvoted{
+    color: darkgoldenrod;
+}
+
+.inactive{
+    color: gray;
+}
+
+.downvoted{
+    color: crimson;
+}

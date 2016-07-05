@@ -1,0 +1,11 @@
+.handle{
+    color: lightgrey;
+}
+.profile-pic{
+    border-radius: 15px;
+    width: 100px;
+    height: auto;
+}
+.media{
+    padding: 2%;
+}

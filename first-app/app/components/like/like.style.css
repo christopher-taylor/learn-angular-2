@@ -1,0 +1,10 @@
+.glyphicon-heart{
+    cursor: pointer;
+}
+.not-liked{
+    color: lightgray;
+}
+
+.liked{
+    color: deeppink;
+}

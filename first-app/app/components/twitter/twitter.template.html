@@ -1,0 +1,10 @@
+<div class="media">
+    <a class="media-left" href="#">
+        <img class="media-object profile-pic" [src]="pic" alt="Generic placeholder image">
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">{{title}} <span class="handle">@{{handle}}</span></h4>
+        <span>{{tweet}}</span><br />
+        <like [starting-likes]="likes"></like>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<i 
+    class="glyphicon" 
+    [class.glyphicon-star-empty]="!isFavorited"
+    [class.glyphicon-star]="isFavorited"
+    (click)="onClick($event)">
+</i>
